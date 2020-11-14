@@ -1,0 +1,125 @@
+.home-container {
+  height: calc(100vh - 30vh);
+}
+
+.logo {
+  height: 2rem;
+  margin: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+// Navigation
+.home-ghost {
+  content: " ";
+  height: 30vh;
+}
+
+nav {
+  position: sticky;
+  top: 2vh;
+  z-index: 10;
+  ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        position: relative;
+        text-align: center;
+        transition: all 300ms ease;
+
+        &::after {
+          content: " ";
+          position: absolute;
+          background: rgba(255, 255, 255, 0.1);
+          top: 0;
+          right: 0;
+          width: 0%;
+          height: 0%;
+          opacity: 0;
+          transition: all 300ms ease;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          height: 100%;
+          width: 100%;
+        }
+        // &:hover {
+        //   background: rgba(255, 255, 255, 0.1);
+        // }
+
+        &::before {
+          content: "";
+          background: white;
+          position: absolute;
+          height: 0.05rem;
+          width: 50%;
+          left: 0;
+          bottom: -1%;
+          opacity: 0;
+          transition: all 300ms ease;
+        }
+
+        &:hover::before {
+          content: "";
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Image of Me
+.me {
+  height: 80vh;
+  position: absolute;
+  top: 10vh;
+  right: 10%;
+  opacity: 0.5;
+  z-index: -10;
+}
+// Hero text
+.hero {
+  position: absolute;
+  width: 52rem;
+  padding-left: 1rem;
+  padding: 2rem 0;
+}
+
+// .hero::after {
+//   content: "";
+//   position: absolute;
+//   background: white;
+//   height: 0.1rem;
+//   bottom: 0;
+//   left: 0;
+//   width: 25%;
+//   transform: translate(150%, 0);
+// }
+
+.hero-text {
+  font-size: 3rem;
+}
+
+.hero-name {
+  font-size: 8rem;
+  margin: 2rem 0;
+}
+
+.s-html {
+  color: #c2330b;
+}
+
+.s-css {
+  color: #016cb4;
+}

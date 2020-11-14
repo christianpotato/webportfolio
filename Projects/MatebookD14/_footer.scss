@@ -1,0 +1,46 @@
+footer {
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  a {
+    font-size: 0.8rem;
+  }
+}
+/*
+.dir-links {
+  border: 1px solid black;
+  padding: 1rem 0;
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-contents {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  div {
+    border: 1px solid black;
+    margin: 1rem 0;
+    ul {
+      list-style: none;
+      li {
+        margin: 0.5rem 0;
+        a {
+          text-decoration: none;
+          color: #ababab;
+          transition: 400ms;
+        }
+        a:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+*/

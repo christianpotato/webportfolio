@@ -1,0 +1,123 @@
+.beoplay {
+  margin-right: 0.5rem;
+  background: #5bb1a0;
+  text-align: right;
+}
+
+.leica {
+  margin-left: 0.5rem;
+  background: #7179c2;
+  text-align: left;
+}
+
+.molekule {
+  margin-right: 0.5rem;
+  background: #e4785e;
+  text-align: right;
+}
+
+.p9 {
+  margin: 0 0.5rem;
+  background: #56707c;
+  text-align: center;
+}
+
+.dr {
+  margin-left: 0.5rem;
+  background: #7dc4d2;
+}
+
+.gina,
+.beoplay,
+.leica,
+.molekule,
+.p9,
+.dr {
+  position: relative;
+}
+
+.contents {
+  h2,
+  p {
+    padding: 2rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  color: white;
+}
+//Flex-container
+
+.gina-main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.beoplay-leica {
+  display: flex;
+  height: 60vh;
+  margin: 1rem 0;
+  overflow: hidden;
+
+  div {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.mole-p9-dr {
+  height: 40vh;
+  display: flex;
+  overflow: hidden;
+
+  div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+//Text-container
+
+h1 {
+  font-size: 8rem;
+  padding: 0 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.text-container {
+  position: absolute;
+}
+
+.gina-text {
+  font-size: 1.5rem;
+  width: 20rem;
+}
+
+// Button
+
+.btn {
+  text-decoration: none;
+  border: 2px solid #cfa86c;
+  margin: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  background: rgba(255, 201, 117, 1);
+  color: black;
+  border: 2px solid transparent;
+}

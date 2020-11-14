@@ -1,0 +1,80 @@
+#logo {
+  height: 1.5rem;
+}
+
+.icons {
+  height: 1.3rem;
+  padding: 0 0.4rem;
+}
+.nav-main-container {
+  position: relative;
+}
+.nav-main {
+  width: 92%;
+  margin: 0 auto;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-main {
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 100%;
+
+    ul:hover li {
+      opacity: 0.5;
+    }
+    ul li:hover {
+      opacity: 1;
+    }
+
+    ul {
+      display: flex;
+      height: 100%;
+
+      li {
+        margin: 0 1rem;
+        list-style: none;
+        a {
+          position: relative;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          font-size: 0.9rem;
+          height: 100%;
+          color: black;
+        }
+
+        a:hover {
+          opacity: 1;
+        }
+
+        a::after {
+          position: absolute;
+          opacity: 0;
+          height: 2px;
+          width: 0%;
+          content: "";
+          background: rgb(32, 32, 32);
+          transition: all 0.3s;
+        }
+
+        a::after {
+          left: 0;
+          bottom: 0;
+        }
+        a:hover::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .store-icons {
+  }
+}
+//End of Navigation Main
